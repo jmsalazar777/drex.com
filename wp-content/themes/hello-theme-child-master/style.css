@@ -1,0 +1,286 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme-child/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 2.0.0
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/* Add your custom styles here */
+
+body {
+  background: url(assets/images/background.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#content {
+  min-height: 400px;
+  padding: 40px 10px;
+}
+
+.home #content {
+  padding: 0;
+}
+
+.elementor-column-gap-default
+  > .elementor-column
+  > .elementor-element-populated {
+  padding: 0;
+}
+
+.elementor-widget:not(:last-child) {
+  margin-bottom: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.bg-100,
+.bg-100 > div {
+  background-size: 100% 100% !important;
+}
+
+#about > div.elementor-container {
+  max-width: 1129px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+#about .wrapper {
+  max-width: 553px;
+}
+
+#about .wrapper > div {
+  gap: 25px;
+}
+
+#about h2 {
+  line-height: 105%;
+}
+
+.good-design strong {
+  font-weight: 500;
+  color: #fff;
+}
+
+.achievements > .elementor-container {
+  gap: 21px;
+}
+
+#specialization > div {
+  gap: 20px;
+}
+
+.specialization-images p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#connected > div {
+  gap: 20px;
+}
+
+#connected .wrapper > div {
+  gap: 20px;
+}
+
+.connected-section span {
+  color: #ff7f50;
+}
+
+#footer p strong {
+  font-weight: 400;
+  color: #ff7f50;
+}
+
+#wprmenu_bar div.hamburger {
+  right: 10px;
+  position: relative;
+}
+
+.marquee {
+  white-space: nowrap;
+  position: relative;
+  animation: marquee 7s linear infinite;
+}
+
+.good-design > div > div {
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: -100%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .elementor-widget-wrap {
+    justify-content: center;
+  }
+
+  #about .wrapper > div {
+    flex-wrap: nowrap !important;
+  }
+
+  #about > div.elementor-container {
+    justify-content: center;
+  }
+
+  .good-design {
+    max-width: 554px;
+    margin: auto;
+  }
+
+  .achievements > div {
+    flex-wrap: nowrap !important;
+  }
+
+  .achievements > div > div {
+    max-width: 278px;
+    margin: auto;
+  }
+
+  .achievements > .elementor-container {
+    max-width: 553px !important;
+    margin: auto;
+  }
+
+  #specialization > div {
+    justify-content: center;
+  }
+
+  #specialization > div > div:nth-of-type(2) {
+    order: 3;
+  }
+
+  #specialization > div {
+    max-width: 553px !important;
+    margin: auto;
+  }
+
+  #specialization > div > div:nth-of-type(1),
+  #specialization > div > div:nth-of-type(3) {
+    max-width: 267px;
+    margin: 0 auto;
+    flex-basis: 48%;
+  }
+
+  #connected > div {
+    justify-content: center;
+    max-width: 553px !important;
+    margin: auto;
+  }
+
+  #connected .wrapper > div {
+    flex-wrap: nowrap !important;
+  }
+
+  .social-media > div {
+    flex-wrap: nowrap !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .zoomIn {
+    animation-delay: 0s !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #about {
+    padding-top: 30px !important;
+  }
+  #about .wrapper > div {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .badge > div {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+
+  .arrow .elementor-widget-container {
+    text-align: center;
+    margin-top: 20px !important;
+  }
+
+  .achievements > .elementor-container {
+    flex-direction: column;
+  }
+
+  #about h3,
+  #about h2 {
+    text-align: center;
+  }
+
+  #specialization > div {
+    flex-direction: column;
+  }
+
+  #specialization h2,
+  #specialization h3 {
+    text-align: center;
+  }
+
+  .service-offering > div {
+    padding-top: 40px !important;
+  }
+
+  #connected .wrapper > div {
+    flex-direction: column;
+  }
+
+  #connected .wrapper > div > div {
+    max-width: 267px;
+    margin: auto;
+  }
+
+  .connected-section {
+    padding-top: 50px !important;
+  }
+
+  .connected-section h2 {
+    font-size: 40px !important;
+  }
+
+  #specialization > div > div:nth-of-type(1),
+  #specialization > div > div:nth-of-type(3) {
+    max-width: 277px;
+    margin: 0 auto;
+    flex-basis: 100%;
+  }
+
+  .bg-100,
+  .bg-100 > div {
+    background-size: cover !important;
+    background-position: center !important;
+  }
+
+  .hfe-nav-menu__layout-horizontal .hfe-nav-menu {
+    flex-direction: column;
+  }
+
+  .hfe-nav-menu__layout-horizontal .hfe-nav-menu li {
+    margin: 0 !important;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  .hfe-nav-menu__layout-horizontal .hfe-nav-menu li a {
+    justify-content: center;
+  }
+}
